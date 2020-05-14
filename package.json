@@ -1,0 +1,21 @@
+{
+  "name": "avligilon-dhcp-tool-v2",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "prebuild": "tsc",
+    "build": "nexe -t windows-x64-12.16.3 -o avigilon-dhcp-tool/avigilon-dhcp-tool"
+  },
+  "devDependencies": {
+    "@types/clear": "^0.1.0",
+    "@types/inquirer": "^6.5.0",
+    "@types/node": "^14.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "clear": "^0.1.0",
+    "inquirer": "^7.1.0"
+  }
+}
